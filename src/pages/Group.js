@@ -195,14 +195,17 @@ function Group() {
                   />
                 )}
                 <div className="group-info">
+                  <div>
+                    <span>{calculateDDay(group.createdAt)}  </span>
+                    <span>|</span>
+                    <span>{group.isPublic ? '공개' : '비공개'}</span>
+                  </div>
                   <h3>{group.name}</h3>
-                  <p>{calculateDDay(group.createdAt)}</p>
-                  <p>{group.isPublic ? '공개' : '비공개'}</p>
                   {isPublic && <p>{group.introduction}</p>}
                   <div className="group-stats">
-                    {isPublic && <span>획득 뱃지: {group.badgeCount}</span>}
-                    <span>그룹 공감 {group.likeCount}</span>
-                    <span>추억 {group.postCount}</span>
+                    {isPublic && <span>획득 뱃지 {group.badgeCount} </span>}
+                    <span>그룹 공감 {group.likeCount} </span>
+                    <span>추억 {group.postCount} </span>
                   </div>
                 </div>
               </div>
