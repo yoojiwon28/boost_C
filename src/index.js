@@ -1,4 +1,8 @@
 import ReactDOM from 'react-dom';
-import App from './pages/App';
+import Main from './main';
+import Modal from 'react-modal';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+Modal.setAppElement('#root'); 
+
+
+ReactDOM.render(<Main />, document.getElementById('root'));

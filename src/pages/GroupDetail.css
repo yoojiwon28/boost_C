@@ -1,0 +1,398 @@
+*{
+    font-family: Spoqa Han Sans Neo;
+  }
+  
+  .profile-img{
+    width: 262px;
+    height: 273px;
+    position:absolute;
+    top: 160px;
+    left: 180px;
+    gap: 0px;
+    border-radius: 6px;
+    opacity: 0px;
+  
+  }
+  
+  .badge-info {
+    display: flex;                       
+    gap: 10px;                   
+    overflow-x: auto;           
+    overflow-y: hidden;         
+    width: 749px;               
+    height: 52px;               
+    position: absolute;         
+    top: 390px;                 
+    left: 502px;                
+    white-space: nowrap;        
+    scrollbar-width: none;
+  }
+  
+  .badge-info .badge {
+    height: 52px;
+    width: 300px;               
+    padding: 16px 30px;         
+    border-radius: 50px;        
+    background-color: #F4F4F4;  
+    color: #282828;             
+    display: flex;             
+    box-sizing: border-box;     
+    flex-shrink: 0;             
+    margin: 0;                  
+  
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.03px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .dday-count{
+    position:absolute;
+    width: 47px;
+    height: 20px;
+    top: 160px;
+    left: 502px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.03px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color:#282828;
+  
+  }
+  .dday-ispublic-line{
+    position:absolute;
+    left:564px;
+    top:160px;
+    color:#8D8D8D;
+  }
+  
+  .ispublic-info{
+    position:absolute;
+    top:160px;
+    left:584px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.03px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color:#8D8D8D;
+  }
+  
+  
+  .group-edit-btn{
+    border:none;
+    background-color: #FAFAFA;
+    color:#282828;
+    position:absolute;
+    width: 120px;
+    height: 18px;
+    top: 170px;
+    left: 1516px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.53px;
+    letter-spacing: -0.03em;
+    text-align: center;
+  }
+  
+  .group-delete-btn{
+    border:none;
+    background-color: #FAFAFA;
+    color:#8D8D8D;
+    position:absolute;
+    width: 100px;
+    height: 18px;
+    top: 170px;
+    left: 1662px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.53px;
+    letter-spacing: -0.03em;
+    text-align: center;
+  
+  }
+  
+  .name-info{
+    position:absolute;
+    width: 167px;
+    height: 38px;
+    top: 200px;
+    left: 502px;
+    gap: 0px;
+    opacity: 0px;  
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37.56px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  
+  }
+  
+  .post-like-line{
+    position: absolute;
+    top: 209px;
+    left: 793px;
+  }
+  
+  .post-like-text{
+    color:#282828;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.54px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
+  
+  .post-count-info{
+    position: absolute;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.54px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    top: 208px;
+    left: 709px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  
+  .like-count-info{
+    position: absolute;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22.54px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    top: 208px;
+    left: 859px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  
+  .introduction-info{
+    position: absolute;
+    top: 278px;
+    left: 502px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.54px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
+  
+  .badge-text{
+    position:absolute;
+    top: 341px;
+    left: 502px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.03px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color:#282828;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+  }
+  
+  .delete-modal {
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    max-width: 90%;
+    z-index: 1001; 
+  }
+  
+  .edit-modal {
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    max-width: 90%;
+    z-index: 1001; 
+  }
+  
+  .modal-close{
+    text-align: right;
+    border: none;
+  }
+  
+  .send-like-btn{
+    position: absolute;
+    width: 187.88px;
+    height: 52px;
+    top: 381px;
+    left: 1552px;
+    padding: 15px 40px 15px 40px;
+    gap: 10px;
+    border-radius: 6px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    
+    background: #FAFAFA;
+    border: 1px solid #282828;
+  
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.03px;
+    letter-spacing: -0.03em;
+    text-align: center;
+  
+  }
+  
+  .memory-post-btn{
+    position: absolute;
+    width: 200px;
+    height: 45px;
+    top: 673px;
+    left: 1540px;
+    gap: 0px;
+    border-radius: 6px;
+    opacity: 0px;
+    background: #282828;
+    color:#f1f1f1;
+  }
+  
+  .memory-list-text{
+    position: absolute;
+    width: 91px;
+    height: 30px;
+    top: 680px;
+    left: 915px;
+    gap: 0px;
+    opacity: 0px;
+  
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.05px;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+  }
+  
+  /* 드롭다운 버튼 스타일 */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    width: 160px;
+    height: 45px;
+    top: 778px;
+    left: 1580px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background-color: #FAFAFA; 
+    color: #282828; 
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 1px solid #282828;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .arrow {
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: block;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    border: 1px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+  }
+  
+  .dropdown-content a {
+    color: #282828;
+    padding: 12px 16px;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  hr{
+    position: absolute;
+    width: 1560px;
+    height: 0px;
+    top: 553px;
+    left: 180px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0.5px;
+  }
+  
+  .show-public-post{
+    position: absolute;
+    width: 66px;
+    height: 45px;
+    top: 778px;
+    left: 180px;
+    gap: 0px;
+    border-radius: 22.5px;
+    opacity: 0px;
+    background-color: #282828;
+    color:#FFFFFF;
+  }
+  .show-private-post{
+    position: absolute;
+    width: 66px;
+    height: 45px;
+    left:256px;
+    top:778px;
+    color:#282828;
+    background-color:#FAFAFA;
+    border:none;
+  }
+  
+  .memories{
+    position:absolute;
+    top:883px;
+    left:180px;
+  }
