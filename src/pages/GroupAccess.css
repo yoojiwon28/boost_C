@@ -1,0 +1,84 @@
+body{
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    background-color: #FAFAFA;
+    width: 100vw; /* 화면 너비에 맞추기 위해 100vw 사용 */
+    height: 100vh; /* 화면 높이에 맞추기 위해 100vh 사용 */
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+header{
+    width: 100%; /* 화면 너비에 맞추기 */
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    position: absolute; /* 화면 상단에 위치 */
+    top: 0;
+    left: 0;
+    padding: 10px 0; /* 상하 패딩 추가 */
+}
+
+.description{
+    text-align: center;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.05px;
+    letter-spacing: -0.03em;
+    color: #282828;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.53px;
+    letter-spacing: -0.03em;
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 40px;
+    width: 400px;
+    left: 760px;
+}
+
+label{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.03px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input{
+    background: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    width: 400px;
+    height: 45px;
+    padding: 10px;
+    top: 30px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 400px;
+    height: 50px;
+    padding: 12px;
+    background-color: #282828;
+    color: #FAFAFA;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+
+    font-weight: 500;
+    line-height: 20.03px;
+    letter-spacing: -0.03em;
+    text-align: center;
+}

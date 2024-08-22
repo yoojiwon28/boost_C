@@ -1,0 +1,135 @@
+body {
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    background-color: #FAFAFA;
+    width: 100vw; /* 화면 너비에 맞추기 위해 100vw 사용 */
+    height: 100vh; /* 화면 높이에 맞추기 위해 100vh 사용 */
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+header{
+    width: 100%; /* 화면 너비에 맞추기 */
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    position: absolute; /* 화면 상단에 위치 */
+    top: 0;
+    left: 0;
+    padding: 10px 0; /* 상하 패딩 추가 */
+}
+
+main{
+    top: 100px;
+}
+
+h2 {
+    color: #282828;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30.05px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    top: 140px;
+    left: 904px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.form-group {
+    margin-bottom: 40px;
+    width: 400px;
+    left: 760px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.03px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+textarea {
+    width: 400px;
+    height: 45px;
+    padding: 10px;
+    top: 30px;
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: #FAFAFA;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+button {
+    width: 400px;
+    height: 50px;
+    padding: 12px;
+    background-color: #282828;
+    color: #FAFAFA;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+
+    font-weight: 500;
+    line-height: 20.03px;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #B8B8B8;
+    transition: 0.4s;
+    border-radius: 15px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 1px;
+    bottom: 1px;
+    background-color: #FAFAFA;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #282828;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}

@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './pages/App';
 import GroupDetail from './pages/GroupDetail';
 import Group from './pages/Group';
-import PasswordCheck from './pages/PasswordCheck';
+import GroupAccess from './pages/GroupAccess';
 import MakeGroup from './pages/MakeGroup';
 
 function Main() {
@@ -14,7 +14,7 @@ function Main() {
           <Route path="/group">
             <Route index element={<Group />} />
             <Route path=":groupId" element={<GroupDetail />} />
-            <Route path=":groupId/password-check" element={<PasswordCheck />} />
+            <Route path=":groupId/password-check" element={<GroupAccess />} />
             <Route path="makegroup" element={<MakeGroup />} />
           </Route>
         </Routes>

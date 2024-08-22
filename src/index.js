@@ -6,3 +6,4 @@ Modal.setAppElement('#root');
 
 
 ReactDOM.render(<Main />, document.getElementById('root'));
+
