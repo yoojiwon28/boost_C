@@ -11,7 +11,7 @@ function Main() {
     <BrowserRouter>
       <App>
         <Routes>
-          <Route path="group">
+          <Route path="/group">
             <Route index element={<Group />} />
             <Route path=":groupId" element={<GroupDetail />} />
             <Route path=":groupId/password-check" element={<PasswordCheck />} />

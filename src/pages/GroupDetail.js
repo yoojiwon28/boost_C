@@ -5,6 +5,7 @@ import axios from 'axios';
 import GroupDeleteModal from '../components/GroupDeleteModal';
 import GroupEditModal from '../components/GroupEditModal';
 
+
 function GroupDetail() {
     const { groupId } = useParams();
     const navigate = useNavigate();
@@ -76,7 +77,7 @@ function GroupDetail() {
             {errorMessage && <div className="error-message">{errorMessage}</div>}
             <div className="card-info-group">
                 <img className="profile-img" src={groupData.imageUrl} alt={groupData.name} />
-                <div className="group-info">
+                <div className="group-detail-info">
                     <div>
                         <div className="dday-count">{calculateDDay(groupData.createdAt)}</div>
                         <div className="dday-ispublic-line">|</div>
@@ -115,7 +116,9 @@ function GroupDetail() {
                     </div>
                 </div>
                 <div className="like">
-                    <button className="send-like-btn" onClick={sendClick}>공감 보내기</button>
+                    <button className="send-like-btn" onClick={sendClick}>
+                        공감 보내기
+                    </button>
                 </div>
             </div>
             <hr />

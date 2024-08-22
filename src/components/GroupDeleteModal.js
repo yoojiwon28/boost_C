@@ -18,7 +18,7 @@ const GroupDeleteModal = ({ isOpen, onRequestClose, onDelete, groupId }) => {
             onDelete(); 
             onRequestClose(); 
         } catch (error) {
-            setErrorMessage('그룹 삭제에 실패했습니다.'); 
+            setErrorMessage('비밀번호를 다시 입력해주세요.'); 
             console.error('Error deleting group:', error); 
         }
     };

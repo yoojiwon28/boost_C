@@ -273,6 +273,12 @@
   
   }
   
+  .like-icon{
+    position:absolute;
+    left:40.52px;
+    top:15.53px;
+  }
+
   .memory-post-btn{
     position: absolute;
     width: 200px;
